@@ -1,12 +1,11 @@
-import React from 'react';
-import WelcomeMessage from './WelcomeMessage'; // Adjust path if needed
-
-function App() {
+function WelcomeMessage() {
     return (
         <div>
-            <WelcomeMessage />
+            <h1>Hello everyone, I am learning React at ALX!</h1>
+            <p>This is a simple JSX component.</p>
+            <p>I am learning about JSX!</p>
         </div>
     );
 }
 
-export default App;
+export default WelcomeMessage;
