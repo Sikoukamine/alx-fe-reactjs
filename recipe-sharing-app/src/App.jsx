@@ -1,14 +1,27 @@
-import React from "react";
-import AddRecipeForm from "alx-fe-reactjs/src/components/AddRecipeForm";
-import RecipeList from "alx-fe-reactjs/src/components/RecipeList";
+import React from 'react';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import SearchBar from './components/SearchBar';
+import RecipeList from './components/RecipeList';
+import FavoritesList from './components/FavoritesList';
+import RecommendationsList from './components/RecommendationsList';
+import AddRecipeForm from './components/AddRecipeForm';
+import RecipeDetail from './components/RecipeDetail'; // Import RecipeDetail component
 
 const App = () => {
   return (
-    <div>
-      <h1>Recipe Sharing App</h1>
-      <AddRecipeForm />
-      <RecipeList />
-    </div>
+    <Router>
+      <div>
+        <h1>Recipe Sharing App</h1>
+        <SearchBar />
+        <AddRecipeForm />
+        <FavoritesList />
+        <RecommendationsList />
+        <Routes>
+          <Route path="/" element={<RecipeList />} />
+          <Route path="/recipes/:id" element={<RecipeDetail />} /> {/* Add RecipeDetail route */}
+        </Routes>
+      </div>
+    </Router>
   );
 };
 
