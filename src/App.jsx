@@ -1,6 +1,6 @@
 import React from "react";
-import AddRecipeForm from "./components/AddRecipeForm"; // Adjust path if needed
-import RecipeList from "./components/RecipeList";     // Adjust path if needed
+import AddRecipeForm from "alx-fe-reactjs/src/components/AddRecipeForm";
+import RecipeList from "./components/RecipeList";
 
 const App = () => {
   return (
