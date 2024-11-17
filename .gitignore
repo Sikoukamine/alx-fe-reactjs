@@ -1,0 +1,12 @@
+# Ignore system files and directories
+*.log
+*.tmp
+*.dat
+AppData/
+Desktop/
+Documents/
+Downloads/
+Music/
+Pictures/
+Videos/
+*.ps1
