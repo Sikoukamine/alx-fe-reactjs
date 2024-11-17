@@ -1,6 +1,6 @@
 import React from 'react';
-import AddRecipeForm from './AddRecipeForm'; // adjust the path based on where AddRecipeForm is located
-import RecipeList from './RecipeList'; // adjust the path based on where RecipeList is located
+import AddRecipeForm from './AddRecipeForm';  // Adjust the path if necessary
+import RecipeList from './RecipeList';  // Adjust the path if necessary
 
 const App = () => {
   return (
