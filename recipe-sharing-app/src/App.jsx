@@ -4,6 +4,7 @@ import SearchBar from './components/SearchBar';
 import RecipeList from './components/RecipeList';
 import FavoritesList from './components/FavoritesList';
 import RecommendationsList from './components/RecommendationsList';
+import RegistrationForm from "./components/RegistrationForm";
 import AddRecipeForm from './components/AddRecipeForm';
 import RecipeDetail from './components/RecipeDetail'; // Import RecipeDetail component
 
