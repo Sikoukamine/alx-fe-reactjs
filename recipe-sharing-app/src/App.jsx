@@ -4,9 +4,10 @@ import SearchBar from './components/SearchBar';
 import RecipeList from './components/RecipeList';
 import FavoritesList from './components/FavoritesList';
 import RecommendationsList from './components/RecommendationsList';
-import RegistrationForm from "./components/RegistrationForm";
 import AddRecipeForm from './components/AddRecipeForm';
-import RecipeDetail from './components/RecipeDetail'; // Import RecipeDetail component
+import RecipeDetail from './components/RecipeDetail';
+import RegistrationForm from './components/RegistrationForm'; // Import the RegistrationForm component
+import FormikForm from './components/FormikForm'; // Import the FormikForm component
 
 const App = () => {
   return (
@@ -19,7 +20,9 @@ const App = () => {
         <RecommendationsList />
         <Routes>
           <Route path="/" element={<RecipeList />} />
-          <Route path="/recipes/:id" element={<RecipeDetail />} /> {/* Add RecipeDetail route */}
+          <Route path="/recipes/:id" element={<RecipeDetail />} />
+          <Route path="/register-controlled" element={<RegistrationForm />} /> {/* Route for controlled form */}
+          <Route path="/register-formik" element={<FormikForm />} /> {/* Route for Formik form */}
         </Routes>
       </div>
     </Router>
