@@ -5,8 +5,7 @@ import RecipeList from './components/RecipeList';
 import FavoritesList from './components/FavoritesList';
 import RecommendationsList from './components/RecommendationsList';
 import AddRecipeForm from './components/AddRecipeForm';
-import RecipeDetail from './components/RecipeDetail';
-import FormikForm from './components/FormikForm'; // Import the FormikForm component
+import RecipeDetail from './components/RecipeDetail'; // Import RecipeDetail component
 
 const App = () => {
   return (
@@ -17,10 +16,9 @@ const App = () => {
         <AddRecipeForm />
         <FavoritesList />
         <RecommendationsList />
-        <FormikForm /> {/* Render the FormikForm directly */}
         <Routes>
           <Route path="/" element={<RecipeList />} />
-          <Route path="/recipes/:id" element={<RecipeDetail />} />
+          <Route path="/recipes/:id" element={<RecipeDetail />} /> {/* Add RecipeDetail route */}
         </Routes>
       </div>
     </Router>
